@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    position: relative;
+    font: normal 1rem/1.4rem 'Montserrat', 'Open Sans', 'Roboto';
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: black;
+    background-size: contain;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "mainL mainR";
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    color: white;
+    line-height: 2.5em;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 1em auto 1em;
+        object-fit: contain;
+    }
+
+    .fa {
+        color: black;
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        display: inline-block;
+        margin-right: 12px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #lDiv {
+        grid-area: mainL;
+        margin-left: 10%!important;
+    }
+
+    #rDiv {
+        grid-area: mainR;
+        margin-right: 10%!important;
+        img{
+            max-width: 33.33vw;
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .main-content {
+        font-size: 0.85em;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "mainL"
+        "mainR";
+    
+        #lDiv, #rDiv {
+            margin:auto!important;
+
+            img {
+                margin: 0.4em auto;
+                max-width: 80%;
+            }
+        }
+    }
+}

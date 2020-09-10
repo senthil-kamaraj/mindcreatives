@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <title>MD Creatives</title>
+</head>
+<body>
+    <div class="container-fluid" id="page-wrapper">
+        <header>
+            <div class="row" style="height: 80px;">
+                <div class="col col-sm-3 col-md-3"><a href="index.html"><img src="images/logo.jpg" class="img-fluid" alt="Mind Creatives"></a></div>
+                <div class="col col-sm-9 col-md-9 text-right ml-auto">
+                    <nobr></nobr><span class="primaryX-padding"><i class="orange fa fa fa-whatsapp"></i> 8310234208</span></nobr>
+                <nobr><span class="primaryX-padding"><i class="orange fa fa fa-envelope-o"></i> contact@mindcreatives.in</span></nobr>
+                </div>
+            </div>
+
+            <nav id="top-menu" class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div id="navMenu" class="collapse navbar-collapse">
+                    <ul id="ul-nav" class="navbar-nav mr-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Digital Art</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">Digital Art v1</a></li>
+                                <li class="dropdown-item"><a href="#">Digital Art v2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vector Art</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">Vector Art v1</a></li>
+                                <li class="dropdown-item"><a href="#">Vector Art v2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Carricature</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Photo Manipulation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Creative Design</a></li>
+                    </ul>
+                    <a id="happy-customers" class="btn btn-outline-orange" href="happycustomers.html">Happy Customers</a>
+                </div>
+            </nav>
+        </header>
+        <div id="content-body">
+                <section id="content" style="margin: 0;">
+                    <div class="row" id="register-form">
+                        <div class="col-md-5 col-sm-hidden">
+                            <div class="blue-grid">
+                                <div class="blue-bg">
+                                    <img src="images/login-img.jpg" alt="" class="img-fluid login-img"> <br><br>
+                                    <p>Have an account already? <br><br>
+                                            <a class="btn btn-orange" href="login.html">Login</a>
+                                    </p>
+                                </div>
+                                <div class="blue-clip"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12 text-center">
+                            <form class="register-form">
+                                <H2 class="mb-3">Create Your Account</H2>
+                                <div class="form-group">
+                                    <label for="firstname_txt">Firstname</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                        </div>
+                                        <input type="input" name="firstname_txt" id="firstname_txt" class="form-control" placeholder="Enter Firstname">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname_txt">Lastname</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user"></i></div>
+                                        </div>
+                                        <input type="input" name="lastname_txt" id="lastname_txt" class="form-control" placeholder="Enter Lastname">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email_txt">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope-o"></i></div>
+                                        </div>
+                                        <input type="email" name="email_txt" id="email_txt" class="form-control" placeholder="Enter Email Id">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile_txt">Mobile</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-mobile"></i></div>
+                                        </div>
+                                        <input type="text" name="mobile_txt" id="mobile_txt" class="form-control" placeholder="Enter Contact No.">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password_txt">Password</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-unlock"></i></div>
+                                        </div>
+                                        <input type="password" name="password_txt" id="password_txt" class="form-control" placeholder="Enter Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_txt">Confirm Password</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-lock"></i></div>
+                                        </div>
+                                        <input type="password" name="confirm_txt" id="confirm_txt" class="form-control" placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                                <div class="text-left ml-auto form-check"><input type="checkbox" class="form-check-input" name="form_cb" id="form_cb" value="decline"> <label for="form_cb" class="form-check-label" >I have read and agreed to the <a href="#" class="form-link text-left">Privacy Policy</a>.</label> <br><br></div>
+                                <input type="submit" value="Create Account" disabled class="btn btn-blue mx-auto" id="create-btn">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        <footer>
+            <div class="bottom-menu">
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li><li><a href="whatwedo.html">What We Do</a></li><li><a href="howitworks.html">How It Works</a></li><li><a href="whatsapporder.html">WhatsApp Order</a></li>
+                </ul>
+            </div>
+            <div id="copyright">&copy; 2020 Mind Creatives. All Rights Reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>
